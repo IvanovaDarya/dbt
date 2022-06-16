@@ -1,0 +1,10 @@
+
+    
+    create table "postgres"."dbt"."source_customers_crm" (id integer,country text,age integer)
+  ;
+    -- dbt seed --
+    
+            insert into "postgres"."dbt"."source_customers_crm" (id, country, age) values
+            (%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s)
+        
+  
